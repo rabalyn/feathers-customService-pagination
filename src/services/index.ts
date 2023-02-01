@@ -1,0 +1,12 @@
+import { customMessage } from './custom-message/custom-message'
+import { customMessage } from './custom-message/custom-message'
+import { user } from './users/users'
+// For more information about this file see https://dove.feathersjs.com/guides/cli/application.html#configure-functions
+import type { Application } from '../declarations'
+
+export const services = (app: Application) => {
+  app.configure(customMessage)
+  app.configure(customMessage)
+  app.configure(user)
+  // All services will be registered here
+}
